@@ -1,5 +1,5 @@
 # python-and-flask-bootcamp
-Exercise code from course by Jose Portilla "[Python and Flask Bootcamp: Create Websites using Flask!]"(https://www.udemy.com/course/python-and-flask-bootcamp-create-websites-using-flask/) on Udemy
+Exercise code from course by Jose Portilla "[Python and Flask Bootcamp: Create Websites using Flask!](https://www.udemy.com/course/python-and-flask-bootcamp-create-websites-using-flask/)" on Udemy
 
 ## requirements.txt
 * alembic==0.9.9
