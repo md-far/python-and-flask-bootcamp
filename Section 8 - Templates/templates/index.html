@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block title %}
+<title>Main</title>
+{% endblock %}
+
+{% block content %}
+  <h1>Welcome!</h1>
+  <p>You can check your username using the form below</p>
+  <p>Your username should:</p>
+  <ul>
+    <li>contain uppercase letter</li>
+    <li>contain lowercase letter</li>
+    <li>end with a number</li>
+  </ul>
+
+  <form action="{{ url_for('report') }}">
+    <label for="username">Username:</label>
+    <input type="text" name="username">
+    <input type="submit" value="Check Username">
+  </form>
+{% endblock %}

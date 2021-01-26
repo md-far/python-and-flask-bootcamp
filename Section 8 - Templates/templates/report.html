@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block title %}
+<title>Report</title>
+{% endblock %}
+
+{% block content %}
+  {% if check_number == 3 %}
+  <p>Your username have met all 3 conditions!</p>
+  {% else %}
+  <p>Your username have met {{check_number}} condition(s).</p>
+  <p>Your username should also</p>
+  <ul>
+    {% for req in unmet %}
+      <li>{{req}}</li>
+    {% endfor %}
+  </ul>
+  {% endif %}  
+{% endblock %}
