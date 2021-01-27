@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block title %}List of Puppies{% endblock %}
+
+{% block content %}
+{% if not puppies %}
+  <p>Whoops! There isn't any puppy</p>
+{% else %}
+  <p>Here is the list of puppies</p>
+
+  <ul>
+    {% for puppy in puppies %}
+      <li>{{puppy}}</li>
+    {% endfor %}
+  </ul>
+{% endif %}
+{% endblock %}
